@@ -15,7 +15,6 @@ Ce projet est une solution complète au Travail Pratique (TP) sur le développem
   - `GET /students/search?name=...` : Recherche par prénom/nom.
   - `GET /students/page?page=0&size=5` : Pagination des résultats.
 - **Gestion Globale des Erreurs :** Utilisation de `@ControllerAdvice` et `@ExceptionHandler` pour formater les erreurs d'exécution (ex: 404, données invalides).
-- **Frontend Dédié (Super Bonus) :** Une magnifique interface web (`HTML/CSS/JS` Vanilla + Glassmorphism) servie nativement par Spring Boot.
 
 ## 🛠️ Technologies
 - **Java 21**
@@ -37,7 +36,6 @@ Ce projet est une solution complète au Travail Pratique (TP) sur le développem
    ```
 4. Une fois lancé (Port `8080`), vous pouvez :
    - Accéder à la base de données H2 sur `http://localhost:8080/h2-console` (JDBC URL: `jdbc:h2:mem:testdb`).
-   - Accéder à la magnifique **Interface Web Frontend** sur `http://localhost:8080`.
 
 ---
 
