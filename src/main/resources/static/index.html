@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Étudiants</title>
+    <!-- Google Fonts pour un style très moderne -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Arrière-plan animé -->
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+
+    <!-- Conteneur principal (Effet Verre) -->
+    <div class="container glass-panel">
+        <header>
+            <h1>🎓 Espace Admin - Étudiants</h1>
+            <p></p>
+        </header>
+
+        <!-- Section du formulaire HTTP POST -->
+        <section class="form-section">
+            <h2>Ajouter un étudiant</h2>
+            <form id="student-form">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Nom complet (ex: Ali Diop)" required minlength="2">
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Adresse e-mail valide" required>
+                </div>
+                <p id="error-message" class="error-text hidden"></p>
+                <button type="submit" class="btn-primary">Enregistrer</button>
+            </form>
+        </section>
+
+        <!-- Section de la liste HTTP GET & DELETE -->
+        <section class="list-section">
+            <h2>Liste des inscrits</h2>
+            
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="🔍 Rechercher par nom de famille/prénom...">
+            </div>
+
+            <div class="table-container">
+                <table id="students-table">
+                    <thead>
+                        <tr>
+                            <th>ID Base</th>
+                            <th>Nom & Prénom</th>
+                            <th>E-mail</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-list">
+                        <!-- Rempli par JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
